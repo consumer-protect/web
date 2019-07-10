@@ -8,154 +8,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
-
-    <!--<script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-    </script>-->
-    <!--<script>
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
-        const links = document.querySelectorAll(".nav-links li");
-
-        hamburger.addEventListener("click", () => {
-            navLinks.classList.toggle("open");
-            links.forEach(link => {
-                link.classList.toggle("fade");
-            });
-        });
-    </script>-->
+    <link rel="stylesheet" href="Best-style.css">
 </head>
+
 <body>
+    <!-- Nav Bar -->
+    <div class="nav" id="navbar">
+        <img src="./img/logo.png" alt="logo" class="logo" />
+
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                Consumer Protect
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="#" target="_blank">Home</a>
+            <a href="#" target="_blank">More Info</a>
+            <a href="#" target="_blank">Resources</a>
+            <a href="#" target="_blank">Nondiscrimination</a>
+        </div>
+    </div>
 
     <!-- Header -->
-    <!--<header>
-            <div class="logo-container">
-                    <img src="./img/logo.svg" alt="logo" />
-                    <h4 class="logo">Consumer Protect</h4>
+    <header class="main">
+        <div class="header">
+            <span class="intro-text">Fight for your rights!</span><br>
+            <span class="intro-sentence">Have you been the target of an unfair or unethical business practice?</span>
+            <div class="cta">
+                <button class="cta-select"><a href="https://qtrial2019q2az1.az1.qualtrics.com/jfe/form/SV_4Hs33xqjuIZodtb"> Share your experience!</a></button>
+        <!--
+        link:  https://qtrial2019q2az1.az1.qualtrics.com/jfe/form/SV_4Hs33xqjuIZodtb
+        -->
+                
             </div>
-
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="nav-link" href="#">More Info</a></li>
-                    <li><a class="nav-link" href="#">Resources</a></li>
-                    <li><a class="nav-link" href="#">Nondiscrimination</a></li>
-                </ul>
-                <div class="container" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </nav>
-
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="nav-link" href="#">More Info</a></li>
-                    <li><a class="nav-link" href="#">Resources</a></li>
-                    <li><a class="nav-link" href="#">Nondiscrimination</a></li>
-                </ul>
-
-                <div class="burger">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </nav>
-
-
-    </header>-->
-    <header>
-
-        <div class="logo-container">
-            <img src="./img/logo.svg" alt="logo" />
-            <h4 class="logo">Consumer Protect</h4>
         </div>
-        <nav role="navigation">
-
-
-
-            <div id="menuToggle">
-                <!--
-                A fake / hidden checkbox is used as click reciever,
-                so you can use the :checked selector on it.
-                -->
-                <input type="checkbox" />
-
-
-                <!--
-                Some spans to act as a hamburger.
-
-                They are acting like a real hamburger,
-                not that McDonalds stuff.
-                -->
-                <span></span>
-                <span></span>
-                <span></span>
-
-                <!--
-                Too bad the menu has to be inside of the button
-                but hey, it's pure CSS magic.
-                -->
-                <ul id="menu">
-                    <a id="nav-link" href="#"><li>More Info</li></a>
-                    <a id="nav-link" href="#"><li>Resources</li></a>
-                    <a id="nav-link" href="#"><li>Nondiscrimination</li></a>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
     </header>
-
-    <!-- Main -->
-    <main>
-        <section class="presentation">
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>Fight for your rights!</h1>
-                    <p>
-                        Have you been the target of an unfair or unethical business practice?
-                    </p>
-                </div>
-                <div class="cta">
-                    <button class="cta-select">Start now</button>
-                    <!--<button class="cta-add">Add To Cart</button>-->
-                </div>
-            </div>
-            <div class="cover">
-                <img src="./img/sj.png" alt="Justice" />
-            </div>
-        </section>
-    </main>
 
     <!-- Sections -->
-    <!-- Section 1-->
+    <!-- Section 1 -->
     <section class="section1">
-        <div class="sec1-title">
-            <p>Submit a Complaint</p>
-        </div>
-        <br>
+        <div class="col-12 col-s-12">
+            <div class="sec1-title"> 
+                <p>Submit a Complaint</p>
+            </div>
+            <br>
 
-        <p>
-            In order to strengthen consumer rights and protect local residents from predatory and unethical business
-            practices, Salt Lake City is developing a new consumer protection program. Currently, we are collecting
-            consumer complaints for informational purposes and may use them to inform future city policy.
-        </p>
+            <p>
+                In order to strengthen consumer rights and protect local residents from predatory and unethical business
+                practices, Salt Lake City is developing a new consumer protection program. Currently, we are collecting
+                consumer complaints for informational purposes and may use them to inform future city policy.
+            </p>
+        </div>
     </section>
 
-    <!-- Section 2 -->
+    <!-- Section 2 --> 
     <section class="section2">
 
-        <div class="row">
-            <div class="column1">
+        <div class="sec2-row">
+            <span class="sec2-column1">
                 <div class="sec2-title">
                     <p>Why should I submit a complaint?</p>
                 </div>
-            </div>
+            </span>
 
-            <div class="column2">
+            <span class="sec2-column2">
                 <div class="sec2-p1">
                     <p>
                     <p style="font-size: 18px;"><b>Your complaint helps us protect our community.</b></p>
@@ -184,7 +110,7 @@
                     on their own.
                     </p>
                 </div>
-            </div>
+            </span>
         </div>
     </section>
 
@@ -196,15 +122,15 @@
         <br>
 
         <div class="sec3-row">
-            <div class="sec3-column1">
+            <span class="sec3-column1">
                 <div class="sec3-p1">
                     <p>
                     <p style="font-size: 18px;"><b>Tell us what happened.</b></p><br></br>
                     Fill out our form to file a complaint—it only takes 10 minutes!
                     </p>
                 </div>
-            </div>
-            <div class="sec3-column2">
+            </span>
+            <span class="sec3-column2">
                 <div class="sec3-p2">
                     <p>
                     <p style="font-size: 18px;"><b>We’ll get back to you with more information.</b></p><br>
@@ -214,8 +140,8 @@
                     the business or individual you complained about.
                     </p>
                 </div>
-            </div>
-            <div class="sec3-column3">
+            </span>
+            <span class="sec3-column3">
                 <div class="sec3-p3">
                     <p>
                     <p style="font-size: 18px;"><b>We work with the City to fix the problem you told us about.</b></p><br>
@@ -224,28 +150,29 @@
                     practices.
                     </p>
                 </div>
-            </div>
+            </span>
         </div>
     </section>
 
     <!-- Section 4-->
     <footer class="footer">
         <div class="footer-row">
-            <div class="footer-column1">
+            <span class="footer-column1">
                 <div class="prp">
                     <img style="height:150px;" src="./img/prp.png" alt="Justice" />
                 </div>
-            </div>
-
-            <div class="footer-column2">
+            </span>
+          
+            <span class="footer-column2">
                 <p>
                     <i>
                         ** Consumer Protect is a free, nonprofit service delivered by PRP for people
                         who have a problem and need a place to submit a complaint in counties in California.
                         We are not a law firm and the information on this site is not legal advice. **
                     </i>
-                </p>
-    </footer>
+                </p> 
+            </span>
+    </footer> 
 
 </body>
 </html>
