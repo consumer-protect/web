@@ -70,16 +70,23 @@ body {
 /* Header Settings*/
 .header {
     height: 500px;
-    padding: 100px /*110px*/ 70px 100px 70px;
-}
-
-.main {
+    padding: 100px 70px 100px 70px;
+    /*margin: 0px 20px 0px 20px;*/
     background-position: center;
     background-size: cover;
     /*background-image: url("https://media0.giphy.com/media/B4rRh0AXFSkhi/giphy.gif");*/
     background-color: #ffffff;
     min-height: 100%;
 }
+
+/*.main {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://media0.giphy.com/media/B4rRh0AXFSkhi/giphy.gif");
+    background-color: #ffffff;
+    background-color: red;
+    min-height: 100%;
+}*/
 
 .gavel {
     height: 75%;
@@ -145,8 +152,9 @@ body {
 }*/
 
 .section1 {
-    padding: 75px 100px 75px 100px;
+    padding: 50px 75px 0 75px;
     background: #fafaf9;
+    /*background-color: red;*/
     border-top: solid 1px #deded2;
     float: center;
     width: 100%;
@@ -155,6 +163,7 @@ body {
 }
 
 .sec1-title {
+    /*background-color: blue;*/
     font-size: 22px;
     color: #00cc82;
     text-align: center;
@@ -168,84 +177,97 @@ body {
 
 .letter {
     height: 100px;
-    padding: 0 30% 0 30%;
+    /*border: 2px solid black;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .clock {
     height: 100px;
-    padding: 0 30% 0 30%;
+    /*border: 2px solid black;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .courthouse {
     height: 100px;
-    padding: 0 30% 0 30%;
+    /*border: 2px solid black;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .sec1-p1,
 .sec1-p2,
 .sec1-p3 {
     text-align: center;
+    /*border: 2px solid black;*/
 }
 
 .sec1-column1 {
+    /*background-color: green;*/
     float: left;
     width: 33.3%;
-    height: 300px;
+    height: 400px;
     padding: 0 20px 0 20px;
 }
 
 .sec1-column2 {
+    /*background-color: pink;*/
     float: left;
     width: 33.3%;
-    height: 300px;
+    height: 420px;
     padding: 0 20px 0 20px;
 }
 
 .sec1-column3 {
+    /*background-color: yellow;*/
     float: left;
     width: 33.3%;
-    height: 300px;
+    height: 400px;
     padding: 0 20px 0 20px;
 }
 
 .section2 {
-    padding: 70px 200px 75px 200px;
+    padding: 50px 100px 0px 100px;
     border-top: solid 1px #deded2;
     float: center;
     width: 100%;
-    min-height: 120vh;
+    min-height: 105vh;
     overflow: hidden;
 }
 
 .sec2-title {
     font-size: 22px;
     color: #00cc82;
-    /*padding-right:100px;*/
     text-align: center;
     font-weight: 800;
 }
 
 .magnifying-glass {
-    height: 130px;
-    padding: 0 8% 0 0;
+    height: 100px;
+    padding: 0 5% 0 5%;
     float: left;
 }
 
 .questions {
-    height: 130px;
-    padding: 0 8% 0 0;
+    height: 100px;
+    padding: 0 5% 0 5%;
     float: left;
 }
 
 .scale {
-    height: 130px;
-    padding: 0 10% 0 0;
+    height: 100px;
+    padding: 0 5% 0 5%;
     float: left;
 }
 
 .sec2-p1, .sec2-p2, .sec2-p3 {
     text-align: left;
 }
+
 
 /*.sec2-column1 {
     float: left;
@@ -290,18 +312,15 @@ body {
     color: #0486C2;
 }
 
-.footer-column1 {
+.prp {
+    height: 160px;
+    padding: 0 5% 0 5%;
     float: left;
-    width: 25%;
-    height: 20px;
-    padding: 0 15px 0px 15px;
 }
 
-.footer-column2 {
-    float: left;
-    width: 75%;
-    height: 20px;
-    padding: 20px 15px 0px 15px;
+.footer-p {
+    text-align: left;
+    height: 150px;
 }
 
 /* For Pages: 
@@ -387,11 +406,11 @@ body {
         overflow-y: auto;
     }
 
-    .section1, .section2, .section3 {
+    /*.section1, .section2, .section3 {
         padding: 75px 50px 75px 50px;
-    }
+    }*/
 
-    .section2 {
+    /*.section2 {
         height: 90vh;
     }
 
@@ -455,7 +474,171 @@ body {
         float: left;
         width: 100%;
         padding: 0px 0px 200px 0px;
+    }*/
+
+    .header {
+        height: 600px;
+        padding: 20px 20px 120px 20px;
     }
+
+    .gavel {
+        height: 200px;
+        padding: 0 50px 0 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    .intro-sentence {
+        text-align: center;
+    }
+
+    .cta {
+        text-align: center;
+        padding: 50px 50px 0px 50px;
+    }
+
+    .section1 {
+        height: 200vh;
+    }
+
+    .letter {
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .clock {
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .courthouse {
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .sec1-column1 {
+        float: left;
+        width: 100%;
+        height: 320px;
+        padding: 0 0px 0px 0px;
+    }
+
+    .sec1-column2 {
+        float: left;
+        width: 100%;
+        height: 520px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .sec1-column3 {
+        float: left;
+        width: 100%;
+        height: 420px;
+        padding: 0 0px 0 0px;
+        margin-bottom: 600px;
+    }
+
+    .section2 {
+        /*margin-top: 0px;*/
+        padding: 20px 50px 0px 20px;
+        height: 100vh;
+    }
+
+    .sec2-title {
+        text-align: center;
+    }
+
+    .sec2-column1 {
+        float: left;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+
+    .sec2-column2 {
+        float: left;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+
+
+    /*.footer {
+        padding: 0 50px 0 50px;
+        height: 500px;
+    }
+
+    .footer-column1 {
+        float: none;
+        width: 100%;
+        height: 0px;
+        padding: 0px 50px 0px 50px;
+        align-items: center;
+        background-color: blue; 
+        border: 2px dashed red;
+    }
+
+    .footer-column2 {
+        float: left;
+        width: 100%;
+        padding: 0px 0px 200px 0px;
+        background-color: red; 
+    }*/
+
+
+    .footer {
+        padding: 0 50px 0 50px;
+        height: 500px;
+    }
+
+    .prp {
+        height: 160px;
+        padding: 0 18% 0 18%;
+        float: left;
+    }
+
+    .footer-p {
+        text-align: left;
+        height: 150px;
+    }
+
+    /* For Pages: 
+    - More Info  
+    - Resources
+    - Nondiscrimination
+*/
+    /*/////////////////////////////////////////////////////////////////////////////*/
+    .page-content {
+        padding: 25px 20px 75px 20px;
+    }
+
+        .page-content a {
+            text-decoration: none;
+            color: #00cc82;
+        }
+
+            .page-content a:hover {
+                color: #4D4D4D;
+            }
+
+    .content-title {
+        color: #00cc82;
+    }
+    /*
+    END OF STYLE FOR ABOVE PAGES
+*/
+    /*/////////////////////////////////////////////////////////////////////////////*/
 }
 
 /* For mobile phones: */
@@ -517,92 +700,87 @@ body {
 
 
     .header {
-        height: 620px;
-        padding: 20px 30px 120px 30px;
-        /*margin: 0% 0% 0% 10%;*/
+        height: 600px;
+        padding: 20px 20px 120px 20px;
     }
 
     .gavel {
-        height: 50%;
-        /*padding: 0 0 0 0;*/;
-        position: center;
-        margin-left: 100%;
-        /*margin-right: 40%;*/
+        height: 200px;
+        padding: 0 50px 0 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .intro-text {
-        padding: 50px 5% 5px 5%;
-        /*margin-left: 10%;*/
-        /*text-align: center;*/
+        text-align: center;
     }
 
     .intro-sentence {
-        padding: 100px 20px 0px 20px;
-        /*text-align: left;*/
+        text-align: center;
     }
 
     .cta {
+        text-align: center;
         padding: 50px 50px 0px 50px;
+
     }
 
     .section1 {
-        height: 250vh;
-        /*background-color: yellow;*/
+        height: 230vh;
     }
 
     .letter {
         height: 100px;
-        padding: 0 30% 0 30%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .clock {
         height: 100px;
-        padding: 0px 30% 0 30%;
-        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .courthouse {
         height: 100px;
-        padding: 0 30% 0 30%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .sec1-column1 {
         float: left;
         width: 100%;
-        height: 300px;
+        height: 320px;
         padding: 0 0px 0px 0px;
-        /*background-color: pink;
-        border: 2px solid black;*/
     }
 
     .sec1-column2 {
         float: left;
         width: 100%;
-        height: 700px;
+        height: 520px;
         padding: 0px 0px 0px 0px;
-        /*background-color: green;
-        border: 2px solid black;*/
     }
 
     .sec1-column3 {
         float: left;
         width: 100%;
-        height: 400px;
+        height: 420px;
         padding: 0 0px 0 0px;
         margin-bottom: 600px;
-        /*background-color: blue;
-        border: 2px solid black;*/ 
     }
 
     .section2 {
         /*margin-top: 0px;*/
-        padding: 100px 50px 0px 20px;
-        height: 200vh;
-        /*background-color: red;*/ 
+        padding: 20px 50px 0px 20px;
+        height: 180vh;
     }
 
     .sec2-title {
-        padding-right: 0px;
+        text-align: center;
     }
 
     .sec2-column1 {
@@ -620,7 +798,7 @@ body {
     }
 
 
-    .footer {
+    /*.footer {
         padding: 0 50px 0 50px;
         height: 500px;
     }
@@ -631,14 +809,32 @@ body {
         height: 0px;
         padding: 0px 50px 0px 50px;
         align-items: center;
-        /*background-color: blue;*/ 
+        background-color: blue; 
+        border: 2px dashed red;
     }
 
     .footer-column2 {
         float: left;
         width: 100%;
         padding: 0px 0px 200px 0px;
-        /*background-color: red;*/ 
+        background-color: red; 
+    }*/
+
+
+    .footer {
+        padding: 0 50px 0 50px;
+        height: 500px;
+    }
+
+    .prp {
+        height: 160px;
+        padding: 0 18% 0 18%;
+        float: left;
+    }
+
+    .footer-p {
+        text-align: left;
+        height: 150px;
     }
 
     /* For Pages: 
@@ -648,7 +844,7 @@ body {
 */
     /*/////////////////////////////////////////////////////////////////////////////*/
     .page-content {
-        padding: 70px 20px 75px 20px;
+        padding: 25px 20px 75px 20px;
     }
 
         .page-content a {
