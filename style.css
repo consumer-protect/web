@@ -50,20 +50,35 @@ body {
         display: inline;
         float: right;
         font-size: 18px;
-        padding: 30px 10px 10px 0px;
+        padding: 30px 10px 10px 0px; 
     }
 
         .nav > .nav-links > a {
             display: inline-block;
-            padding: 13px 10px 13px 10px;
+            padding: 13px 10px 13px 10px; 
             text-decoration: none;
-            color: #4d4d4d;
+            /*color: #4d4d4d;*/
             text-align: center;
+            /*border-top: 2px solid #00cc82;
+            border-right: 2px solid #00cc82;
+            border-left: 2px solid #00cc82;*
+            /*box-shadow: 2px 0px 0px 0px rgba(0,0,0,0.16), 5px 0px 0 0px rgba(0,0,0,0.12);*/
+            /*border-radius: 10px 10px 0px 0px;*/
         }
 
             .nav > .nav-links > a:hover {
-                background-color: rgba(0, 0, 0, 0.3);
+                background-color: #ada9a9;
+                color: #ffffff;
+
             }
+
+        .active-link {
+            color:  #00cc82;
+        }
+
+        .unactive-link {
+            color: #4d4d4d;
+        }
 
     .nav > #nav-check {
         display: none;
@@ -152,7 +167,7 @@ body {
         'cta1 img1';
     grid-gap: 15px;
     grid-column-gap: 25px;
-    padding: 75px 50px 200px 50px;
+    padding: 75px 75px 200px 75px;
     background-color: #ffffff;
     border-top: solid 1px #deded2;
     text-align: left;
@@ -519,7 +534,7 @@ body {
         transition: all 0.3s ease-in;
         overflow-y: hidden;
         top: 100px; 
-        left: 0px;
+        left: 0px; 
         padding: 0 0 0 0;
     }
 
@@ -528,6 +543,29 @@ body {
             display: block;
             width: 100%;
         }
+
+        .nav > .nav-links > a {
+            display: inline-block;
+            padding: 13px 10px 13px 10px;
+            text-decoration: none;
+            color: #4d4d4d;
+            text-align: center;
+            border-top: 0px none;
+            border-right: 0px none;
+            border-left: 0px none;
+            /*box-shadow: 2px 0px 0px 0px rgba(0,0,0,0.16), 5px 0px 0 0px rgba(0,0,0,0.12);*/
+            border-radius: 0px;
+        }
+
+    .active-link {
+        background-color: inherit;
+    }
+
+    .nav > .nav-links > a:hover {
+        /*background-color: rgba(0, 0, 0, 0.3);*/
+        background-color: #00cc82;
+        color: #ffffff;
+    }
 
     .nav > #nav-check:not(:checked) ~ .nav-links {
         height: 0px;
