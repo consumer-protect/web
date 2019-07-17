@@ -92,13 +92,13 @@ body {
     min-height: 100%;
 }*/
 
-.header-img1 {
+/*.header-img1 {
     grid-area: img1;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    /*padding: 0 10px 0 10px;*/
-}
+    padding: 0 10px 0 10px;
+}*/
 
 .gavel {
     height: 200px;
@@ -154,14 +154,14 @@ body {
     }
 
 
-.header-p1 {
+/*.header-p1 {
     grid-area: text1;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
     font-size: 16px;
-}
+}*/
 
 .cta {
     grid-area: cta;
@@ -218,14 +218,14 @@ body {
     font-weight: 800;
 }
 
-.sec5-img1 {
+.header-img1 {
     grid-area: img1;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-.sec5-p1 {
+.header-p1 {
     grid-area: text1;
     width: 100%;
     margin-left: auto;
@@ -235,16 +235,16 @@ body {
     text-align: center;
 }
 
-.cta5 {
-    grid-area: cta5;
+.cta1 {
+    grid-area: cta1;
     padding-top: 25px;
 }
-.grid-container5 {
+.grid-container-h {
     display: grid;
     grid-template-areas: 
         'text1 img1'
         'text1 img1'
-        'cta5 img1';
+        'cta1 img1';
     grid-gap: 15px;
     grid-column-gap: 25px;
     padding: 75px 50px 200px 50px;
@@ -255,7 +255,7 @@ body {
 }
 
 
-    .grid-container5 > div {
+    .grid-container-h > div {
         /*background-color: rgba(255, 255, 255, 0.8);*/
         /*background-color: blue;*/
         text-align: left;
@@ -263,16 +263,16 @@ body {
     }
 
 @media (max-width:600px) {
-    .grid-container5 {
+    .grid-container-h {
         grid-template-areas: 
             'img1' 
             'text1' 
-            'cta5';
+            'cta1';
         grid-gap: 10px;
         padding: 50px 25px 25px 25px;
     }
 
-        .grid-container5 > div {
+        .grid-container-h > div {
             /*background-color: rgba(255, 255, 255, 0.8);*/
             /*background-color: blue;*/
             text-align: center;
@@ -285,20 +285,7 @@ body {
 /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* Section 1 Settings*/
-/*.section1 {
-    position: relative;
-    padding: 50px 75px 0 75px;
-    background: #fafaf9;
-    background-color: red;
-    border-top: solid 1px #deded2;
-    float: center;
-    width: 100%;
-    min-height: 100vh;
-    min-height: auto;
-    overflow: hidden;
-    height: 100%;
-    margin: 0 auto;
-}*/
+/**/
 
 /*.sec1-title {
     background-color: blue;
@@ -308,10 +295,7 @@ body {
     font-weight: 800;
 }*/
 
-/*.sec1-img1 {
-    height: 100%;
-    vertical-align: middle;
-}*/
+
 
 .letter {
     height: 100px;
@@ -337,12 +321,7 @@ body {
     display: block;
 }
 
-/*.sec1-p1,
-.sec1-p2,
-.sec1-p3 {
-    text-align: center;
-    border: 2px solid black;
-}*/
+
 
 
 /*.sec1-column1 {
@@ -378,14 +357,14 @@ body {
     font-weight: 800;
 }
 
-.sec0-img1 {
+.sec1-img1 {
     grid-area: img1;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-.sec0-p1 {
+.sec1-p1 {
     grid-area: text1;
     width: 100%;
     margin-left: auto;
@@ -395,14 +374,14 @@ body {
     text-align: center;
 }
 
-.sec0-img2 {
+.sec1-img2 {
     grid-area: img2;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-.sec0-p2 {
+.sec1-p2 {
     grid-area: text2;
     width: 100%;
     margin-left: auto;
@@ -410,21 +389,21 @@ body {
     display: block;
 }
 
-.sec0-img3 {
+.sec1-img3 {
     grid-area: img3;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-.sec0-p3 {
+.sec1-p3 {
     grid-area: text3;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-.grid-container {
+.grid-container1 {
     display: grid;
     grid-template-areas: 'title title title' 'img1 img2 img3' 'text1 text2 text3';
     grid-gap: 15px;
@@ -436,7 +415,7 @@ body {
 }
 
 
-    .grid-container > div {
+    .grid-container1 > div {
         /*background-color: rgba(255, 255, 255, 0.8);*/
         /*background-color: blue;*/
         text-align: center;
@@ -444,7 +423,7 @@ body {
     }
 
 @media (max-width:600px) {
-    .grid-container {
+    .grid-container1 {
         grid-template-areas: 'title title' 'img1 img1' 'text1 text1' 'img2 img2' 'text2 text2' 'img3 img3' 'text3 text3';
         grid-gap: 10px;
         padding: 50px 25px 15px 25px;
@@ -767,7 +746,7 @@ body {
 
 
 /* For tables: */
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
     .nav > .nav-btn {
         display: inline-block;
         position: absolute;
@@ -780,7 +759,7 @@ body {
             width: 50px;
             height: 50px;
             padding: 13px;
-            /*background-color: red;*/
+            background-color: red;
             margin-top: 25px;
         }
 
@@ -792,24 +771,24 @@ body {
                 display: block;
                 width: 25px;
                 height: 10px;
-                border-top: 2px solid #4d4d4d; /*#eee;*/
+                border-top: 2px solid #4d4d4d; #eee;
             }
 
     .nav > .nav-links {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: #ffffff; /*#504f4f;*/ /*#333;*/
+        background-color: #ffffff; #504f4f; #333;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 100px; /*50px*/
+        top: 100px; 50px
         left: 0px;
         padding: 0 0 0 0;
     }
 
         .nav > .nav-links > a {
-            color: #504f4f; /*#ffffff;*/
+            color: #504f4f; #ffffff;
             display: block;
             width: 100%;
         }
@@ -823,11 +802,9 @@ body {
         overflow-y: auto;
     }
 
-    /*.section1, .section2, .section3 {
-        padding: 75px 50px 75px 50px;
-    }*/
 
-    /*.section2 {
+
+    .section2 {
         height: 90vh;
     }
 
@@ -848,10 +825,7 @@ body {
         height: 100px;
         text-align: center;
     }
-
-    .section3 {
-        height: 100vh;
-    }
+    
 
     .sec3-column1 {
         float: left;
@@ -891,7 +865,7 @@ body {
         float: left;
         width: 100%;
         padding: 0px 0px 200px 0px;
-    }*/
+    }
 
     .header {
         height: 500px;
@@ -920,9 +894,7 @@ body {
         padding: 50px 50px 0px 50px;
     }
 
-    .section1 {
-        height: 200vh;
-    }
+
 
     .letter {
         height: 100px;
@@ -1030,14 +1002,14 @@ body {
     .footer-p {
         text-align: left;
         height: 150px;
-    }
+    }*
 
-    /* For Pages: 
+     /*For Pages: 
     - More Info  
     - Resources
     - Nondiscrimination
-*/
-    /*/////////////////////////////////////////////////////////////////////////////*/
+
+    /////////////////////////////////////////////////////////////////////////////
     .page-content {
         padding: 25px 20px 75px 20px;
     }
@@ -1054,11 +1026,11 @@ body {
     .content-title {
         color: #00cc82;
     }
-    /*
+    
     END OF STYLE FOR ABOVE PAGES
-*/
-    /*/////////////////////////////////////////////////////////////////////////////*/
-}
+
+    /////////////////////////////////////////////////////////////////////////////
+}*
 
 /* For mobile phones: */
 @media (max-width:640px) {
@@ -1116,145 +1088,6 @@ body {
         height: calc(100vh - 50px);
         overflow-y: auto;
     }
-
-
-    /*.header {
-        height: 600px;
-        padding: 20px 20px 120px 20px;
-    }
-
-    .gavel {
-        height: 150px;
-        padding: 0 50px 0 50px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    .intro-text {
-        text-align: center;
-    }
-
-    .intro-sentence {
-        text-align: center;
-    }
-
-    .cta {
-        text-align: center;
-        padding: 50px 50px 0px 50px;
-
-    }
-
-    .section1 {
-        height: 230vh;
-    }
-
-    .letter {
-        height: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    .clock {
-        height: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    .courthouse {
-        height: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    .sec1-column1 {
-        float: left;
-        width: 100%;
-        height: 320px;
-        padding: 0 0px 0px 0px;
-    }
-
-    .sec1-column2 {
-        float: left;
-        width: 100%;
-        height: 540px;
-        padding: 0px 0px 0px 0px;
-    }
-
-    .sec1-column3 {
-        float: left;
-        width: 100%;
-        height: 420px;
-        padding: 0 0px 0 0px;
-        margin-bottom: 600px;
-    }
-
-    .section2 {
-        margin-top: 0px;
-        padding: 20px 75px 0px 75px;
-        min-height: 145vh;
-    }
-
-    .sec2-title {
-        text-align: center;
-    }
-
-    .sec2-column1 {
-        float: left;
-        width: 100%;
-        height: 100px;
-        text-align: center;
-    }
-
-    .sec2-column2 {
-        float: left;
-        width: 100%;
-        height: 100px;
-        text-align: center;
-    }
-
-
-    .footer {
-        padding: 0 50px 0 50px;
-        height: 500px;
-    }
-
-    .footer-column1 {
-        float: none;
-        width: 100%;
-        height: 0px;
-        padding: 0px 50px 0px 50px;
-        align-items: center;
-        background-color: blue; 
-        border: 2px dashed red;
-    }
-
-    .footer-column2 {
-        float: left;
-        width: 100%;
-        padding: 0px 0px 200px 0px;
-        background-color: red; 
-    }
-
-
-    .footer {
-        padding: 0 50px 0 50px;
-        height: 500px;
-    }
-
-    .prp {
-        height: 160px;
-        padding: 0 18% 0 18%;
-        float: left;
-    }
-
-    .footer-p {
-        text-align: left;
-        height: 150px;
-    }*
 
     /* For Pages: 
     - More Info  
