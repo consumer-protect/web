@@ -1,1 +1,1 @@
-https://consumer-protect.github.io/web/
+link: https://consumer-protect.github.io/web/
